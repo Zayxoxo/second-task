@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(248, 238, 217);
+}
+.main-container {
+  max-width: 700px;
+  align-content: center;
+  justify-content: center;
+  margin-left: 35rem;
+  line-height: 2rem;
+}
+.omelette img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.prep-time {
+  background-color: rgba(250, 213, 219, 0.541);
+  border: none;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.prep-time h2 {
+  color: darkred;
+  margin-bottom: 1rem;
+}
+.ingredients h2,
+.steps h2,
+.nutrient h2 {
+  color: rgb(66, 30, 4);
+}
+.nutrient ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nutrient th,
+.nutrient td {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrient th {
+  font-weight: bold;
+  color: #555;
+}
+
+.nutrient td {
+  color: #663300;
+}
+.nutrient table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .prep-time {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .prep-time h2 {
+    font-size: 1.5rem;
+  }
+
+  .nutrient table th,
+  .nutrient table td {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .prep-time h2,
+  .ingredients h2,
+  .steps h2,
+  .nutrient h2 {
+    font-size: 1.2rem;
+  }
+
+  .nutrient table {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nutrient table th,
+  .nutrient table td {
+    padding: 0.3rem;
+  }
+
+  .main-container {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+  }
+}
